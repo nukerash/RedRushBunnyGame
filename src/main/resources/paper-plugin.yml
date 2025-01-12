@@ -1,5 +1,5 @@
-name: Game
-version: '1.0.1'
+name: RedRushBunnyGame
+version: '1.0.2'
 main: net.s0ckett.game.Main
 api-version: '1.21'
 folia-supported: true

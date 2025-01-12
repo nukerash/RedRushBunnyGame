@@ -17,10 +17,11 @@ import java.util.Set;
 
 public class RBCommand extends Command {
     private final Map<String, RBCommandBase> commands = new HashMap<>();
+    private final GameEndHandler gameEndHandler; // Добавьте это поле
 
     public RBCommand(PlayerListManager playerListManager, Main plugin, PluginConfig pluginConfig) {
         super("rb");
-        commands.put("setspawn", new SetSpawnCommand(playerListManager, plugin));
+        this.gameEndHandler = new GameEndHandler(playerListManager, plugin); // Инициализируйте поле
         commands.put("add", new AddCommand(playerListManager));
         commands.put("remove", new RemoveCommand(playerListManager));
         commands.put("list", new ListCommand(playerListManager));
@@ -35,6 +36,9 @@ public class RBCommand extends Command {
         commands.put("help", new HelpCommand(playerListManager));
         commands.put("clear", new ClearCommand(playerListManager));
         commands.put("status", new StatusCommand(playerListManager, pluginConfig));
+        commands.put("stop", new StopCommand(playerListManager, gameEndHandler));
+        commands.put("setspawn", new SetSpawnCommand(playerListManager, plugin));
+        commands.put("pvp", new PvPCommand(playerListManager));
     }
 
     @Override

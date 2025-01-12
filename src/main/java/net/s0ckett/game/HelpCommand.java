@@ -58,6 +58,18 @@ public class HelpCommand extends RBCommandBase {
                 .color(NamedTextColor.AQUA)
                 .append(Component.text(" - Алиас для /rb spectator.").color(NamedTextColor.WHITE)));
 
+        sender.sendMessage(Component.text("/rb pvp <on|off>")
+                .color(NamedTextColor.AQUA)
+                .append(Component.text(" - Включает/выключает PvP для всех игроков.").color(NamedTextColor.WHITE)));
+
+        sender.sendMessage(Component.text("/rb stop")
+                .color(NamedTextColor.AQUA)
+                .append(Component.text(" - Останавливает игру и завершает раунд.").color(NamedTextColor.WHITE)));
+
+        sender.sendMessage(Component.text("/rb setspawn")
+                .color(NamedTextColor.AQUA)
+                .append(Component.text(" - Устанавливает точку спавна для завершения игры.").color(NamedTextColor.WHITE)));
+
         sender.sendMessage(Component.text("/rb help")
                 .color(NamedTextColor.AQUA)
                 .append(Component.text(" - Показывает это сообщение.").color(NamedTextColor.WHITE)));
