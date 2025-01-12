@@ -1,0 +1,6 @@
+# тута ты меняй все крч да
+border-speed: 1
+spectator-on-death: true
+default-border-size: 100
+glowing-duration: 25
+gateway-remove-delay: 25

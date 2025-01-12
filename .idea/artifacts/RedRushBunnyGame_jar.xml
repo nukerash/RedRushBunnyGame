@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="RedRushBunnyGame:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/RedRushBunnyGame_jar</output-path>
+    <root id="archive" name="RedRushBunnyGame.jar">
+      <element id="dir-copy" path="$PROJECT_DIR$/src/main/resources" />
+      <element id="module-output" name="net.s0ckett.board.Game.main" />
+    </root>
+  </artifact>
+</component>

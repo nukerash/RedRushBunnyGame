@@ -1,0 +1,5 @@
+name: Game
+version: '1.0.1'
+main: net.s0ckett.game.Main
+api-version: '1.21'
+folia-supported: true
